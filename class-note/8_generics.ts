@@ -40,3 +40,17 @@ function logTextLen<T extends LengthType>(text: T): T {
 }
 logTextLen('a');
 logTextLen({ length: 10 })
+
+// 제네릭 타입 제한 3 - keyokf
+interface ShoppingItem {
+    name: string;
+    price: number;
+    stock: number;
+}
+
+function getShoppingItemOption<T extends keyof ShoppingItem>(itemOptions: T): T {
+    return itemOptions;
+}
+// getShoppingItemOption(10);
+// getShoppingItemOption<string>('a');
+getShoppingItemOption("name");

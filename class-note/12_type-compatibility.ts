@@ -26,7 +26,7 @@ sum = add;
 
 // 제네릭
 interface Empty<T> {
-
+    // ...
 }
 var empty1: Empty<string>;
 var empty2: Empty<number>;
@@ -38,3 +38,5 @@ interface NotEmpty<T> {
 }
 var notempty1: NotEmpty<string>;
 var notempty2: NotEmpty<number>;
+// notempty1 = notempty2;
+// notempty2 = notempty1;

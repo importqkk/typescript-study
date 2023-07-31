@@ -31,3 +31,6 @@ var detailedItem: DetailedDropdown<string> = {
     value: 'a',
     tag: 'a'
 }
+
+// Best Common Type (가장 적절한 타입)
+var arr = [1, 2, true, true, 'a'];
